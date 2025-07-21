@@ -4,17 +4,22 @@
 
 This is a managed Expo project.
 
+## Prerequisites
+
+- An EAS account
+- An Apple developer account
+
 ## Instructions
 
 1. Create a Sentry project
-2. Create a Sentry token with scope `org:ci` (this scope is the one chosen when generating the token from the docs)
+2. Create a token with scope `org:ci` (this scope is the one chosen when generating the token from the docs)
 3. Configure Sentry in `app/_layout.tsx`
     - Set `dsn` to the project DSN
 4. Create an EAS project
-5. Add the token as a variable `SENTRY_AUTH_TOKEN` to all EAS environments (including `preview`)
+5. Add the Sentry token as a variable `SENTRY_AUTH_TOKEN` to all EAS environments (including `Preview`)
 6. Configure `app.json`
     - Set `expo.extra.eas.projectId` to the project id
-    - Set `expo.slug` & `expo.plugins[1].project` to the proejct slug
+    - Set `expo.slug` & `expo.plugins[1].project` to the project slug
     - Set `expo.plugins[1].project` to the project organization
 7. Run `npm install`
 8. Run `npx eas build --platform ios --profile preview`
