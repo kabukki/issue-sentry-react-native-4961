@@ -1,0 +1,29 @@
+{
+    "name": "app",
+    "main": "expo-router/entry",
+    "version": "1.0.0",
+    "private": true,
+    "devDependencies": {
+        "@expo/cli": "^0.24.12",
+        "@types/react": "~19.1.2",
+        "eas-cli": "^16.4.0",
+        "metro": "^0.82.2",
+        "typescript": "^5.8.3"
+    },
+    "dependencies": {
+        "@expo/config-plugins": "^10.0.2",
+        "@expo/metro-config": "~0.20.13",
+        "@expo/metro-runtime": "~5.0.4",
+        "@sentry/react-native": "^6.16.0",
+        "expo": "^53.0.7",
+        "expo-constants": "~17.1.5",
+        "expo-linking": "~7.1.4",
+        "expo-router": "~5.0.5",
+        "react": "19.0.0",
+        "react-native": "0.79.2"
+    },
+    "overrides": {
+        "react": "19.0.0",
+        "react-dom": "19.0.0"
+    }
+}

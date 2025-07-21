@@ -1,0 +1,36 @@
+{
+    "expo": {
+        "name": "Issue Sentry React Native 4961",
+        "slug": "...",
+        "version": "1.0.1",
+        "orientation": "portrait",
+        "scheme": "issue-sentry-react-native-4961",
+        "userInterfaceStyle": "automatic",
+        "newArchEnabled": true,
+        "ios": {
+            "bundleIdentifier": "dev.issue-sentry-react-native-4961",
+            "infoPlist": {
+                "ITSAppUsesNonExemptEncryption": false
+            }
+        },
+        "plugins": [
+            "expo-router",
+            [
+                "@sentry/react-native/expo",
+                {
+                    "url": "https://sentry.io/",
+                    "project": "...",
+                    "organization": "..."
+                }
+            ]
+        ],
+        "extra": {
+            "eas": {
+                "projectId": "..."
+            }
+        },
+        "runtimeVersion": {
+            "policy": "appVersion"
+        }
+    }
+}
